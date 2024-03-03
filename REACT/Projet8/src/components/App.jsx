@@ -1,10 +1,20 @@
+// j'importe mes 3 composants pour pouvoir les appeler dans mes routes
 import Header from "./Header";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    //Schema type pour gérer des navigation d'une page à une autre
+    // le header une seule fois au dessus des routes permet de se répéter sur chaque page
+    <BrowserRouter>
       <Header />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
