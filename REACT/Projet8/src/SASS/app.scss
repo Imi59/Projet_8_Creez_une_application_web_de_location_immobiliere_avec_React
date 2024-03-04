@@ -7,10 +7,15 @@
     ul {
       display: flex;
 
+      a { //ici la balise navlink est convertit automatiquement en a
+        text-decoration: none;
+      }
+
       li {
         margin: 0px 10px;
         list-style: none;
         cursor: pointer;
+        color: black;
       }
     }
   }
