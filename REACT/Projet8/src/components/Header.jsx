@@ -10,10 +10,16 @@ function Header() {
         <img src={LOGO} alt="Logo KASA" />
         <nav>
           <ul>
-            <NavLink to="/">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "underline" : "")}
+            >
               <li>Accueil</li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "underline" : "")}
+            >
               <li>A propos </li>
             </NavLink>
           </ul>

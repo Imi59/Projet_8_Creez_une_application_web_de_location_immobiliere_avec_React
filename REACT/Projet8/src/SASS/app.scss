@@ -7,8 +7,15 @@
     ul {
       display: flex;
 
-      a { //ici la balise navlink est convertit automatiquement en a
+      a {
+        //ici la balise navlink est convertit automatiquement en a
         text-decoration: none;
+        // pour correspondre à la maquette et avoir un surlignement lorsque je clique sur le lien 
+
+        &.underline {
+          text-decoration: underline;
+          color: black;
+        }
       }
 
       li {
