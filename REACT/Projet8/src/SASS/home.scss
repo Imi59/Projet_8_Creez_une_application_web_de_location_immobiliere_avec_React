@@ -1,3 +1,18 @@
 .home {
     padding: 3em;
+
+    .gallery {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        border-radius: 25px;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3em;
+
+
+    }
 }

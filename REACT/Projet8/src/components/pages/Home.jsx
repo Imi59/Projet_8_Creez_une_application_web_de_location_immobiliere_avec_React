@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home">
       <Banner />
-     // <div className="gallery">
+      <div className="gallery">
         <Cards Logements={Logements} />
       </div>
     </div>
