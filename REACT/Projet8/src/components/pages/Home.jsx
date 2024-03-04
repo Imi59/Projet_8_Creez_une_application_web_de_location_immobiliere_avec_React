@@ -1,7 +1,11 @@
+import ImgBanner from "../../assets/images/IMG.jpg";
+
 function Home() {
   return (
-    <div>
-      <h1>PAGE d accueil</h1>
+    <div className="home">
+      <div className="banner">
+        <img src={ImgBanner} alt="source" />
+      </div>
     </div>
   );
 }

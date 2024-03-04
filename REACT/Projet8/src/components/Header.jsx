@@ -3,6 +3,7 @@ import LOGO from "../assets/images/LOGO.jpg";
 //composant pour la navigation
 import { NavLink } from "react-router-dom";
 
+
 function Header() {
   return (
     <div>
@@ -13,7 +14,7 @@ function Header() {
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "underline" : "")}
-            >
+            > 
               <li>Accueil</li>
             </NavLink>
             <NavLink
