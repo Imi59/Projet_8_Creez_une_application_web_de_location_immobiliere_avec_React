@@ -5,6 +5,7 @@ function Home() {
     <div className="home">
       <div className="banner">
         <img src={ImgBanner} alt="source" />
+        <h1>Chez vous, partout et ailleurs</h1>
       </div>
     </div>
   );
