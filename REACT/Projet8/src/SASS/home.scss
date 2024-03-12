@@ -3,7 +3,6 @@
 
     .gallery {
         margin-top: 3em;
-        margin-bottom: 3em;
         padding-top: 3em;
         padding-bottom: 3em;
         border-radius: 25px;
@@ -12,6 +11,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 3em;
+        margin-bottom: 0;
 
 
     }
