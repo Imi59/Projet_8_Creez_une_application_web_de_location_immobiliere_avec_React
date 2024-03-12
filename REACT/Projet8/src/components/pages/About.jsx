@@ -1,7 +1,9 @@
+import Banner2 from "../Banner1";
+
 function About() {
   return (
-    <div>
-      <h1>PAGE A PROPOS ohohoh</h1>
+    <div className="about">
+      <Banner2 />
     </div>
   );
 }
