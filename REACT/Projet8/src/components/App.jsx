@@ -1,5 +1,6 @@
 // j'importe mes 3 composants pour pouvoir les appeler dans mes routes
 import Header from "./Header";
+import Footer from "./Footer";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
