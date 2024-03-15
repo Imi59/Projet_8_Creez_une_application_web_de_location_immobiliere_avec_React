@@ -3,14 +3,13 @@
 
     .gallery {
         margin-top: 3em;
-        padding-top: 3em;
-        padding-bottom: 3em;
         border-radius: 25px;
         background-color: #F6F6F6;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3em;
+        display: grid;
+        padding: 3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
         margin-bottom: 0;
 
 

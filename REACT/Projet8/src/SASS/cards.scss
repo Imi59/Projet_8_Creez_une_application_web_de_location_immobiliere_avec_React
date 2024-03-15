@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
 .cards {
-    width: 340px;
-    height: 340px;
-    position: relative;
+    width: 330px;
+    height: 330px;
+
+
+    //background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
+    border-radius: 10px;
+    border: 2px solid red;
+
 
 
     img {
         width: 100%;
         height: 100%;
+
         object-fit: cover;
-        border-radius: 25px;
-        position: relative;
+        border-radius: 10px 10px 0px 0px;
+
+
     }
 
     h3 {
         width: 100%;
-        height: 15%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
         color: #FFFFFF;
         font-size: 16px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
-        margin: 0;
-        border-radius: 0px 0px 25px 25px;
+        text-align: center;
         font-family: "Montserrat";
+
+        border: blue 2px solid;
 
 
     }
