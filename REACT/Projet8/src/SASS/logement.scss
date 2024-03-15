@@ -1,0 +1,28 @@
+.title {
+    border: red 2px solid;
+    margin: 3em;
+
+    h1 {
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.host {
+    display: flex;
+
+    p {
+        border: red 2px solid;
+        color: #FF6060;
+    }
+}
