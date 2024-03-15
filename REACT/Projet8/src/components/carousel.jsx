@@ -20,7 +20,11 @@ const Carousel = ({ images }) => {
       <div className="left" onClick={prevSlide}>
         <img src={arrowLeft} alt="Previous" />
       </div>
-      <img className="slide" src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      <img
+        className="slide"
+        src={images[currentIndex]}
+        alt={`Slide ${currentIndex + 1}`}
+      />
       <div className="right" onClick={nextSlide}>
         <img src={arrowRight} alt="Next" />
       </div>

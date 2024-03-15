@@ -1,10 +1,14 @@
 .carrousel-container {
+    position: relative;
+    margin: 3em;
 
-    border: red 2px solid;
 
     .slide {
         width: 100%;
-        height: 255px;
+        height: 430px;
+        border-radius: 25px;
+        object-fit: cover;
+
 
     }
 
