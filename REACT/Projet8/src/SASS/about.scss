@@ -1,13 +1,19 @@
 .about {
     display: flex;
     flex-direction: column;
+    margin: 3em;
     gap: 2em;
+    align-items: center;
+
+
 
 
     .collapseAbout {
         display: flex;
         flex-direction: column;
         gap: 2em;
+        width: 70%;
+
 
     }
 }

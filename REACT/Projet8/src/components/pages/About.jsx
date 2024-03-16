@@ -1,6 +1,6 @@
 import React, { useState } from "react"; // Importer useState si nécessaire
 import Collapse from "../Collapse";
-import Banner2 from "../Banner1";
+import Banner2 from "../Banner2";
 import AboutDatas from "../../data/aboutArray.json";
 
 function About() {
@@ -17,20 +17,23 @@ function About() {
   };
 
   return (
-    <div className="about">
+    <div>
       <Banner2 />
-      <div className="collapseAbout">
-        {AboutDatas.map((item, index) => (
-          <Collapse
-            key={index}
-            title={item.aboutTitle}
-            defaultOpen={true}
-            isOpen={collapseStates[index]} // Utiliser l'état local pour isOpen
-            onToggle={() => handleToggle(index)} // Passer la fonction de bascule
-          >
-            <p>{item.aboutText}</p>
-          </Collapse>
-        ))}
+      <div className="about">
+        <div className="collapseAbout">
+          {AboutDatas.map((item, index) => (
+            <Collapse
+              className="collapse"
+              key={index}
+              title={item.aboutTitle}
+              defaultOpen={true}
+              isOpen={collapseStates[index]} // Utiliser l'état local pour isOpen
+              onToggle={() => handleToggle(index)} // Passer la fonction de bascule
+            >
+              <p>{item.aboutText}</p>
+            </Collapse>
+          ))}
+        </div>
       </div>
     </div>
   );
