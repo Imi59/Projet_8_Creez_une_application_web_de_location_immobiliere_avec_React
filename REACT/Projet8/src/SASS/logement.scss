@@ -1,28 +1,132 @@
-.title {
-    border: red 2px solid;
-    margin: 3em;
+.part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    h1 {
-        color: #FF6060;
-        font-family: Montserrat;
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin: 0;
+    .title {
+        margin: 3em;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: #FF6060;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 51px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            //font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .tags {
+            display: flex;
+            list-style: none;
+            gap: 1em;
+            padding-left: 0;
+
+            li {
+                width: 115px;
+                height: 25px;
+                border-radius: 10px;
+                background: #FF6060;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+            }
+
+        }
     }
 
-    p {
-        margin: 0;
+    .host-rating {
+        margin-right: 3em;
+
+        .host {
+            display: flex;
+            justify-content: flex-end;
+
+            height: 60px;
+            gap: 1em;
+
+            p {
+
+                color: #FF6060;
+                font-size: 18px;
+
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .stars {
+            display: flex;
+            gap: 1em;
+
+        }
     }
 }
 
-.host {
+.collapse-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    gap: 4em;
+}
+
+.collapse1 {
     display: flex;
+    flex-direction: column;
+    background: #F6F6F673;
+
+
+    .description {
+        display: flex;
+        background-color: #FF6060;
+        border-radius: 10px;
+        color: white;
+        padding: 5px 10px 5px 5px;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn-collapse {
+            cursor: pointer;
+        }
+    }
 
     p {
-        border: red 2px solid;
-        color: #FF6060;
+        margin: 0;
+    }
+
+    .description:not(:only-child) {
+        background-color: #ff6060;
+    }
+}
+
+.collapse2 {
+    display: flex;
+    flex-direction: column;
+
+
+    .equipements {
+        display: flex;
+        background-color: #FF6060;
+        border-radius: 10px;
+        color: white;
+        padding: 5px 10px 5px 5px;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn-collapse {
+            cursor: pointer;
+        }
     }
 }
