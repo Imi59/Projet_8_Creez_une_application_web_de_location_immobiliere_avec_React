@@ -17,7 +17,6 @@
             letter-spacing: 0em;
             text-align: left;
             margin: 0;
-            //font-family: 'Montserrat', sans-serif;
         }
 
         p {
@@ -49,7 +48,7 @@
         .host {
             display: flex;
             justify-content: flex-end;
-
+            align-items: center;
             height: 60px;
             gap: 1em;
 
@@ -57,6 +56,10 @@
 
                 color: #FF6060;
                 font-size: 18px;
+                height: 100%;
+                border: red solid 2px;
+                display: flex;
+
 
             }
 
@@ -65,68 +68,27 @@
             }
         }
 
+
         .stars {
             display: flex;
+            align-items: center;
             gap: 1em;
+            justify-content: center;
+            border: black 2px solid;
 
         }
     }
-}
-
-.collapse-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-bottom: 3em;
-    gap: 4em;
-}
-
-.collapse1 {
-    display: flex;
-    flex-direction: column;
-    background: #F6F6F673;
 
 
-    .description {
-        display: flex;
-        background-color: #FF6060;
-        border-radius: 10px;
-        color: white;
-        padding: 5px 10px 5px 5px;
-        align-items: center;
-        justify-content: space-between;
 
-        .btn-collapse {
-            cursor: pointer;
-        }
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .description:not(:only-child) {
-        background-color: #ff6060;
-    }
-}
-
-.collapse2 {
-    display: flex;
-    flex-direction: column;
+    .collapse-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 3em;
+        gap: 4em;
 
 
-    .equipements {
-        display: flex;
-        background-color: #FF6060;
-        border-radius: 10px;
-        color: white;
-        padding: 5px 10px 5px 5px;
-        align-items: center;
-        justify-content: space-between;
-
-        .btn-collapse {
-            cursor: pointer;
-        }
     }
 }

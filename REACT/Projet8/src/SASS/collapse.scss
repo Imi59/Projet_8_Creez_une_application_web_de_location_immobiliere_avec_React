@@ -1,0 +1,31 @@
+.collapse-section {
+    border-radius: 5px;
+    background-color: white;
+
+
+    &.open {
+        background: #F6F6F673;
+        height: 300px;
+    }
+
+    .collapse-content {
+        padding: 1em;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+
+    .collapse-header {
+        display: flex;
+        background-color: #FF6060;
+        border-radius: 5px;
+        color: white;
+        padding: 3px 7px 3px 3px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
