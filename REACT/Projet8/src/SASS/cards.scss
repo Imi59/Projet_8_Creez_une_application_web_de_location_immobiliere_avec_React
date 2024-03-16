@@ -1,18 +1,14 @@
 .cards {
     width: 330px;
     height: 330px;
-
-
-    //background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
+    position: relative;
     border-radius: 10px;
-    border: 2px solid red;
 
 
 
     img {
         width: 100%;
         height: 100%;
-
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
 
@@ -20,13 +16,16 @@
     }
 
     h3 {
-        width: 100%;
+        display: flex;
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
         font-family: "Montserrat";
-
-        border: blue 2px solid;
+        position: absolute;
+        left: 5.88%;
+        right: 5.88%;
+        top: 78.82%;
+        bottom: 5.88%;
 
 
     }
