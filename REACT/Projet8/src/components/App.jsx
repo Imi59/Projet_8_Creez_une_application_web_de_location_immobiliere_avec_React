@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Logement from "./Logement";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ErrorPage from "./ErrorPage";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="logement/:id" element={<Logement />} />
+        {/* Route pour gérer les routes non trouvées */}
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

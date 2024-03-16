@@ -1,0 +1,32 @@
+.errorContainer {
+    padding: 0;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+
+
+    .errorNumber {
+        color: #FF6060;
+        font-family: Montserrat;
+        margin: 0;
+        font-size: 200px;
+        font-weight: 700;
+        text-align: center;
+
+    }
+
+    .errorText {
+
+        margin: 0;
+        color: #FF6060;
+        font-size: 36px;
+    }
+
+    .errorLinkHome {
+
+        margin: 0;
+        color: #000000;
+    }
+
+}
