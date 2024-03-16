@@ -75,17 +75,18 @@ const Logement = () => {
         </div>
         <div className="host-rating">
           <div className="host">
-            <p>
-              {hostFirstName} <p>{hostLastName}</p>
-            </p>
+            <span>
+              <p>{hostFirstName}</p>
+              <p>{hostLastName}</p>
+            </span>
             <img src={logement.host.picture} alt={logement.host.name} />
           </div>
           {/* Affichage de la notation de l'hôte */}
+
           <p className="stars">{renderRatingStars(logement.rating)}</p>
         </div>
       </div>
       <div className="collapse-part">
-        {/* Utilisation du composant Collapse pour afficher la description */}
         <Collapse
           title="Description"
           defaultOpen={true}
@@ -94,7 +95,6 @@ const Logement = () => {
         >
           <p>{logement.description}</p>
         </Collapse>
-        {/* Utilisation du composant Collapse pour afficher les équipements */}
         <Collapse
           title="Equipments"
           defaultOpen={true}
