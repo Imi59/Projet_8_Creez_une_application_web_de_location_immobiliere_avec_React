@@ -1,3 +1,13 @@
-.about{
-    
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+
+    .collapseAbout {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+    }
 }

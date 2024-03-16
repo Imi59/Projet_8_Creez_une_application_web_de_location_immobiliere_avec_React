@@ -89,7 +89,7 @@ const Logement = () => {
       <div className="collapse-part">
         <Collapse
           title="Description"
-          defaultOpen={true}
+          defaultOpen={false}
           isOpen={descriptionVisible}
           onToggle={toggleDescriptionVisibility}
         >
@@ -97,7 +97,7 @@ const Logement = () => {
         </Collapse>
         <Collapse
           title="Equipments"
-          defaultOpen={true}
+          defaultOpen={false}
           isOpen={equipmentsVisible}
           onToggle={toggleEquipmentsVisibility}
         >
