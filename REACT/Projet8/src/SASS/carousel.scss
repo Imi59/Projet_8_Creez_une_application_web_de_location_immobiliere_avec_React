@@ -26,4 +26,16 @@
         transform: translateY(-50%);
 
     }
+
+    .pagination {
+        color: white;
+        position: absolute;
+        bottom: 7%;
+        right: 50%;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        color: White;
+        text-shadow: 2px 2px 8px #000000;
+    }
 }

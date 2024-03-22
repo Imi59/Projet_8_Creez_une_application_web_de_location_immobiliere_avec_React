@@ -28,6 +28,9 @@ const Carousel = ({ images }) => {
       <div className="right" onClick={nextSlide}>
         <img src={arrowRight} alt="Next" />
       </div>
+      <div className="pagination">
+        {currentIndex + 1}/{images.length}
+      </div>
     </div>
   );
 };

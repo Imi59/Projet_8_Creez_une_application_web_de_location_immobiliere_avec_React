@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import logements from "../data/logements.json"; // Importez les données des logements
-import Carousel from "./carousel.jsx"; // Importez le composant Carousel
-import filledStar from "../assets/images/filled-star.png"; // Importez l'image d'étoile remplie
-import emptyStar from "../assets/images/empty-star.png"; // Importez l'image d'étoile vide
-import Collapse from "./Collapse"; // Importez le nouveau composant Collapse
+import logements from "../data/logements.json"; // Importer les données des logements fournies par OC
+import Carousel from "./carousel.jsx"; // Importer le composant Carousel
+import Stars from "./Stars.jsx";
+import Collapse from "./Collapse"; // Importer le composant Collapse
 
 // Fonction pour trouver le logement en fonction de son ID
 const findLogementID = (id) => {
@@ -20,32 +19,10 @@ const Logement = () => {
   const hostFirstName = hostNameParts[0];
   const hostLastName = hostNameParts.slice(1).join(" ");
 
-  // Fonction pour générer les étoiles de notation en fonction du rating
-  const renderRatingStars = (rating) => {
-    const filledStarsCount = Math.round(rating);
-    const emptyStarsCount = 5 - filledStarsCount;
-
-    const stars = [];
-
-    // Ajout des étoiles pleines
-    for (let i = 0; i < filledStarsCount; i++) {
-      stars.push(<img key={i} src={filledStar} alt="Filled star" />);
-    }
-
-    // Ajout des étoiles vides
-    for (let i = 0; i < emptyStarsCount; i++) {
-      stars.push(
-        <img key={filledStarsCount + i} src={emptyStar} alt="Empty star" />
-      );
-    }
-
-    return stars;
-  };
-
   // Déclaration de l'état local pour suivre si la description est visible ou cachée
-  const [descriptionVisible, setDescriptionVisible] = useState(true);
+  const [descriptionVisible, setDescriptionVisible] = useState(false);
   // Déclaration de l'état local pour suivre si les équipements sont visibles ou cachés
-  const [equipmentsVisible, setEquipmentsVisible] = useState(true);
+  const [equipmentsVisible, setEquipmentsVisible] = useState(false);
 
   // Fonction pour basculer la visibilité de la description
   const toggleDescriptionVisibility = () => {
@@ -81,9 +58,9 @@ const Logement = () => {
             </span>
             <img src={logement.host.picture} alt={logement.host.name} />
           </div>
-          {/* Affichage de la notation de l'hôte */}
-
-          <p className="stars">{renderRatingStars(logement.rating)}</p>
+          <div>
+            <Stars> </Stars>
+          </div>
         </div>
       </div>
       <div className="collapse-part">
