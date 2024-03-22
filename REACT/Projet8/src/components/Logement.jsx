@@ -4,6 +4,7 @@ import logements from "../data/logements.json"; // Importer les données des log
 import Carousel from "./carousel.jsx"; // Importer le composant Carousel
 import Stars from "./Stars.jsx";
 import Collapse from "./Collapse"; // Importer le composant Collapse
+import Host from "./Host.jsx";
 
 // Fonction pour trouver le logement en fonction de son ID
 const findLogementID = (id) => {
@@ -13,11 +14,6 @@ const findLogementID = (id) => {
 const Logement = () => {
   const { id } = useParams(); // Obtenez l'ID du logement à partir des paramètres de l'URL
   const logement = findLogementID(id); // Recherchez le logement correspondant à l'ID
-
-  // Séparer le nom complet de l'hôte en prénom et nom de famille
-  const hostNameParts = logement.host.name.split(" ");
-  const hostFirstName = hostNameParts[0];
-  const hostLastName = hostNameParts.slice(1).join(" ");
 
   // Déclaration de l'état local pour suivre si la description est visible ou cachée
   const [descriptionVisible, setDescriptionVisible] = useState(false);
@@ -51,18 +47,13 @@ const Logement = () => {
           </ul>
         </div>
         <div className="host-rating">
-          <div className="host">
-            <span>
-              <p>{hostFirstName}</p>
-              <p>{hostLastName}</p>
-            </span>
-            <img src={logement.host.picture} alt={logement.host.name} />
-          </div>
-          <div>
+          <Host></Host>
+          <div className="stars">
             <Stars> </Stars>
           </div>
         </div>
       </div>
+
       <div className="collapse-part">
         <Collapse
           title="Description"

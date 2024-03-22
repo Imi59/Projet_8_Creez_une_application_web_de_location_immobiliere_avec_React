@@ -1,7 +1,7 @@
 .part1 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     .title {
         margin: 3em;
@@ -52,51 +52,22 @@
 
     .host-rating {
         margin-right: 3em;
-
-        .host {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 60px;
-            gap: 1em;
-            font-family: 'Montserrat';
-
-            span {
-
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-
-                p {
-
-                    color: #FF6060;
-                    font-size: 18px;
-                    margin: 0;
-                    padding: 0;
-
-
-
-                }
-            }
-
-
-
-            img {
-                height: 100%;
-            }
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
 
 
         .stars {
             display: flex;
             align-items: center;
             gap: 1em;
-            justify-content: center;
+            justify-content: flex-end;
+
 
         }
     }
 }
+
 
 
 
