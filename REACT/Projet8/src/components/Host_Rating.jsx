@@ -1,16 +1,20 @@
-import filledStar from "../assets/images/filled-star.png"; // Importer l'image d'étoile remplie
-import emptyStar from "../assets/images/empty-star.png"; // Importer l'image d'étoile vide
 import logements from "../data/logements.json"; // Importer les données des logements fournies par OC
 import { useParams } from "react-router-dom";
+import filledStar from "../assets/images/filled-star.png"; // Importer l'image d'étoile remplie
+import emptyStar from "../assets/images/empty-star.png"; // Importer l'image d'étoile vide
 
-function Stars() {
+function Host_Rating() {
   const findLogementID = (id) => {
     return logements.find((logement) => logement.id === id);
   };
 
   const { id } = useParams(); // Obtenez l'ID du logement à partir des paramètres de l'URL
   const logement = findLogementID(id); // Recherchez le logement correspondant à l'ID
+  // Séparer le nom complet de l'hôte en prénom et nom de famille
 
+  const hostNameParts = logement.host.name.split(" ");
+  const hostFirstName = hostNameParts[0];
+  const hostLastName = hostNameParts.slice(1).join(" ");
   const renderRatingStars = (rating) => {
     const filledStarsCount = Math.round(rating);
     const emptyStarsCount = 5 - filledStarsCount;
@@ -31,11 +35,21 @@ function Stars() {
 
     return stars;
   };
+
   return (
-    <div>
-      <p className="stars"> {renderRatingStars(logement.rating)}</p>
+    <div className="host-rating">
+      <div className="host">
+        <span>
+          <p>{hostFirstName}</p>
+          <p>{hostLastName}</p>
+        </span>
+        <img src={logement.host.picture} alt={logement.host.name} />
+      </div>
+      <div>
+        <p className="stars"> {renderRatingStars(logement.rating)}</p>
+      </div>
     </div>
   );
 }
 
-export default Stars;
+export default Host_Rating;

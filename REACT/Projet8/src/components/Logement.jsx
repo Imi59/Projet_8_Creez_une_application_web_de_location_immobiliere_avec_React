@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import logements from "../data/logements.json"; // Importer les données des logements fournies par OC
 import Carousel from "./carousel.jsx"; // Importer le composant Carousel
-import Stars from "./Stars.jsx";
 import Collapse from "./Collapse"; // Importer le composant Collapse
-import Host from "./Host.jsx";
+import Host_Rating from "./Host_Rating.jsx";
 
 // Fonction pour trouver le logement en fonction de son ID
 const findLogementID = (id) => {
@@ -31,7 +30,7 @@ const Logement = () => {
   };
 
   return (
-    <div>
+    <div className="all">
       {/* Carousel pour afficher les images du logement */}
       <Carousel images={logement.pictures} />
       <div className="part1">
@@ -46,12 +45,8 @@ const Logement = () => {
             ))}
           </ul>
         </div>
-        <div className="host-rating">
-          <Host></Host>
-          <div className="stars">
-            <Stars> </Stars>
-          </div>
-        </div>
+
+        <Host_Rating></Host_Rating>
       </div>
 
       <div className="collapse-part">

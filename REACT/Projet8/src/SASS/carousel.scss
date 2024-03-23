@@ -1,6 +1,6 @@
 .carrousel-container {
     position: relative;
-    margin: 3em 3em 0em 3em;
+    margin-bottom: 1em;
 
 
 
@@ -37,5 +37,9 @@
         line-height: 26px;
         color: White;
         text-shadow: 2px 2px 8px #000000;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 }
