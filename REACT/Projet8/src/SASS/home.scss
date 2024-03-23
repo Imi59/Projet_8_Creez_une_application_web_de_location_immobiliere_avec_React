@@ -1,6 +1,10 @@
 .home {
     padding: 3em;
 
+    @media screen and (max-width: 768px) {
+        padding: 1em;
+    }
+
     .gallery {
         margin-top: 3em;
         border-radius: 25px;
@@ -9,8 +13,16 @@
         padding: 3em;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 50px;
-        grid-row-gap: 50px;
+
         margin-bottom: 0;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 0;
+            grid-row-gap: 1em;
+        }
 
 
     }

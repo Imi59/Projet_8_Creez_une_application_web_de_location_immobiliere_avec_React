@@ -1,8 +1,19 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 2em 3em 0em 3em;
+    padding: 1em 3em 0em 3em;
     margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 1em;
+    }
+
+    img {
+        @media screen and (max-width: 768px) {
+            width: 145px;
+        }
+
+    }
 
 
     nav {
@@ -13,6 +24,11 @@
             font-weight: 500;
             line-height: 34.22px;
             text-align: right;
+
+            @media screen and (max-width: 768px) {
+                font-size: 5px;
+                text-transform: uppercase;
+            }
 
             a {
                 //ici la balise navlink est convertit automatiquement en a

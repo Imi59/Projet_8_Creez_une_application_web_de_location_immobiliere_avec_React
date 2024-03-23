@@ -1,6 +1,6 @@
 .cards {
-    width: 330px;
-    height: 330px;
+    width: 1fr;
+    height: 1fr;
     position: relative;
     border-radius: 10px;
 
@@ -10,7 +10,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
 
 
     }
@@ -19,12 +19,12 @@
         display: flex;
         color: #FFFFFF;
         font-size: 18px;
-        text-align: center;
+        text-align: left;
         font-family: "Montserrat";
         position: absolute;
         left: 5.88%;
         right: 5.88%;
-        top: 78.82%;
+        top: 65%;
         bottom: 5.88%;
 
 

@@ -45,8 +45,8 @@ function Host_Rating() {
         </span>
         <img src={logement.host.picture} alt={logement.host.name} />
       </div>
-      <div>
-        <p className="stars"> {renderRatingStars(logement.rating)}</p>
+      <div className="stars">
+        <p> {renderRatingStars(logement.rating)}</p>
       </div>
     </div>
   );
