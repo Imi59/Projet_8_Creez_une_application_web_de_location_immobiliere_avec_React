@@ -5,6 +5,10 @@
     gap: 2em;
     align-items: center;
 
+    @media screen and (max-width: 768px) {
+        margin: 1em;
+    }
+
 
 
 
@@ -13,7 +17,10 @@
         flex-direction: column;
         gap: 2em;
         width: 70%;
-        
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
 
 
     }
