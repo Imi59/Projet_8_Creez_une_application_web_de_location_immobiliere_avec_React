@@ -4,6 +4,7 @@
     gap: 2em;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
 
 
     .errorNumber {
@@ -11,8 +12,14 @@
         font-family: Montserrat;
         margin: 0;
         font-size: 200px;
+
         font-weight: 700;
         text-align: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: 100PX;
+        }
+
 
     }
 
@@ -21,6 +28,17 @@
         margin: 0;
         color: #FF6060;
         font-size: 36px;
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18PX;
+            width: 50%;
+            text-align: center;
+            flex-wrap: wrap;
+        }
     }
 
     .errorLinkHome {
