@@ -1,6 +1,6 @@
 .cards {
     width: 1fr;
-    height: 1fr;
+    height: 300px;
     position: relative;
     border-radius: 10px;
 
@@ -26,6 +26,7 @@
         right: 5.88%;
         top: 65%;
         bottom: 5.88%;
+        height: max-content;
 
 
 
