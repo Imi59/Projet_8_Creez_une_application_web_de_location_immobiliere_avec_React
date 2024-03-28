@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import arrowLeft from "../assets/images/arrow-left.png"; // Importer l'image de la flèche gauche
-import arrowRight from "../assets/images/arrow-right.png"; // Importer l'image de la flèche droite
+import arrowLeft from "../../assets/images/arrow-left.png"; // Importer l'image de la flèche gauche
+import arrowRight from "../../assets/images/arrow-right.png"; // Importer l'image de la flèche droite
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

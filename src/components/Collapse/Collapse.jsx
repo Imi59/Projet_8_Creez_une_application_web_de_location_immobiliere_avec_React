@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import arrowUp from "../assets/images/arrow-up.png"; // Importez l'image de la flèche vers le haut
-import arrowDown from "../assets/images/arrow-down.png"; // Importez l'image de la flèche vers le bas
+import arrowUp from "../../assets/images/arrow-up.png"; // Importez l'image de la flèche vers le haut
+import arrowDown from "../../assets/images/arrow-down.png"; // Importez l'image de la flèche vers le bas
 
 const Collapse = ({ title, isOpen, onToggle, children }) => {
   // Fonction pour basculer l'état du collapse
