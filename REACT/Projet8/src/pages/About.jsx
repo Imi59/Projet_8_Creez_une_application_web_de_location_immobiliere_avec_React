@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Importer useState si nécessaire
-import Collapse from "../Collapse";
-import Banner2 from "../Banner2";
-import AboutDatas from "../../data/aboutArray.json";
+import Collapse from "../components/Collapse/Collapse";
+import Banner2 from "../components/Banner2/Banner2";
+import AboutDatas from "../data/aboutArray.json";
 
 function About() {
   // Définir l'état local pour suivre l'état de chaque Collapse

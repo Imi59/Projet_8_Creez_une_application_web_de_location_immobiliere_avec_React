@@ -1,7 +1,7 @@
-import Banner from "../Banner";
-import Cards from "../Cards";
+import Banner from "../components/Banner1/Banner";
+import Cards from "../components/Card/Cards";
 // je dois importer mon dossier json avec les logements pour pouvoir les afficher dynamiquement
-import Logements from "../../data/logements.json";
+import Logements from "../data/logements.json";
 
 function Home() {
   return (

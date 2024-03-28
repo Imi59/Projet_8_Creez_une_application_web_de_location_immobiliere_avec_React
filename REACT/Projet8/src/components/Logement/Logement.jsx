@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import logements from "../data/logements.json"; // Importer les données des logements fournies par OC
+import logements from "../../data/logements.json"; // Importer les données des logements fournies par OC
 import Carousel from "./carousel.jsx"; // Importer le composant Carousel
 import Collapse from "./Collapse"; // Importer le composant Collapse
 import Host_Rating from "./Host_Rating.jsx";

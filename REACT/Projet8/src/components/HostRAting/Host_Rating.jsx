@@ -1,4 +1,4 @@
-import logements from "../data/logements.json"; // Importer les données des logements fournies par OC
+import logements from "../../data/logements.json"; // Importer les données des logements fournies par OC
 import { useParams } from "react-router-dom";
 import filledStar from "../assets/images/filled-star.png"; // Importer l'image d'étoile remplie
 import emptyStar from "../assets/images/empty-star.png"; // Importer l'image d'étoile vide
