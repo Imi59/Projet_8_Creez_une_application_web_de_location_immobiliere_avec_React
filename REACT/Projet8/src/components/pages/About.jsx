@@ -17,23 +17,22 @@ function About() {
   };
 
   return (
-    <div>
+    <div className="about">
       <Banner2 />
-      <div className="about">
-        <div className="collapseAbout">
-          {AboutDatas.map((item, index) => (
-            <Collapse
-              className="collapse"
-              key={index}
-              title={item.aboutTitle}
-              defaultOpen={true}
-              isOpen={collapseStates[index]} // Utiliser l'état local pour isOpen
-              onToggle={() => handleToggle(index)} // Passer la fonction de bascule
-            >
-              <p>{item.aboutText}</p>
-            </Collapse>
-          ))}
-        </div>
+
+      <div className="collapseAbout">
+        {AboutDatas.map((item, index) => (
+          <Collapse
+            className="collapse"
+            key={index}
+            title={item.aboutTitle}
+            defaultOpen={true}
+            isOpen={collapseStates[index]} // Utiliser l'état local pour isOpen
+            onToggle={() => handleToggle(index)} // Passer la fonction de bascule
+          >
+            <p>{item.aboutText}</p>
+          </Collapse>
+        ))}
       </div>
     </div>
   );

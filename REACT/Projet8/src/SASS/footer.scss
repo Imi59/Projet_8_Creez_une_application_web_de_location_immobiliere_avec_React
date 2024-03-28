@@ -1,11 +1,12 @@
 .footer {
     background-color: black;
-    width: 100%;
+    margin: 0;
     height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 
     img {
         width: 110px;

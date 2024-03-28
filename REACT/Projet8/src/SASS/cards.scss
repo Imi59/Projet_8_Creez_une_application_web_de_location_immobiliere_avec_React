@@ -4,6 +4,20 @@
     position: relative;
     border-radius: 10px;
 
+    &::after {
+        content: ""; // Obligatoire pour les pseudo-éléments
+        position: absolute; // Position absolue par rapport à la carte
+        top: 0; // Aligner en haut de la carte
+        left: 0; // Aligner à gauche de la carte
+        width: 100%; // Pleine largeur de la carte
+        height: 100%; // Pleine hauteur de la carte
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+        pointer-events: none; // Assure que le pseudo-élément ne reçoit pas les événements de souris
+
+    }
+
+
+
 
 
     img {
@@ -13,10 +27,13 @@
         border-radius: 10px;
 
 
+
+
+
     }
 
     h3 {
-        display: flex;
+
         color: #FFFFFF;
         font-size: 18px;
         text-align: left;
@@ -24,9 +41,10 @@
         position: absolute;
         left: 5.88%;
         right: 5.88%;
-        top: 65%;
-        bottom: 5.88%;
-        height: max-content;
+        bottom: 0%;
+        width: 60%;
+
+
 
 
 

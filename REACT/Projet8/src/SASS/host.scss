@@ -13,6 +13,7 @@
           }
 
           .host {
+
               display: flex;
               gap: 1em;
               height: 70px;
@@ -21,7 +22,7 @@
               font-family: 'Montserrat';
 
               @media screen and (max-width: 768px) {
-                  height: 30px;
+                  height: 40px;
               }
 
 
@@ -29,10 +30,11 @@
               span {
 
 
+
                   p {
 
                       color: #FF6060;
-                      margin: 0.5em;
+                      margin: 0.2em;
                       font-size: 18px;
 
                       @media screen and (max-width: 768px) {
@@ -45,6 +47,9 @@
 
               img {
                   height: 100%;
+                  border-radius: 50%;
+                  overflow: hidden;
+
               }
           }
 

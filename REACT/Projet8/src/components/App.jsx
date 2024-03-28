@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Logement from "./Logement";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
+import "../SASS/app.scss";
 
 function App() {
   return (
