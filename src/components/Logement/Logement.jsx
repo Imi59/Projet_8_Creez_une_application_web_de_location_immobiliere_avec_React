@@ -26,10 +26,8 @@ const Logement = () => {
             ))}
           </ul>
         </div>
-
         <Host_Rating />
       </div>
-
       <div className="collapse-part">
         <Collapse title="Description" defaultOpen={false}>
           <p>{logement.description}</p>

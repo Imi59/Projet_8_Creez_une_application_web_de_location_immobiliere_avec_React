@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import arrowLeft from "../../assets/images/arrow-left.png"; // Importer l'image de la flèche gauche
-import arrowRight from "../../assets/images/arrow-right.png"; // Importer l'image de la flèche droite
+import arrowLeft from "../../assets/images/arrow-left.png";
+import arrowRight from "../../assets/images/arrow-right.png";
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,12 +15,10 @@ const Carousel = ({ images }) => {
     setCurrentIndex(newIndex);
   };
 
-  // Vérifier s'il n'y a qu'un seul slide
   const isSingleSlide = images.length === 1;
 
   return (
     <div className="carrousel-container">
-      {/* Conditionner l'affichage de la flèche gauche */}
       {!isSingleSlide && (
         <div className="left" onClick={prevSlide}>
           <img src={arrowLeft} alt="Previous" />
@@ -31,13 +29,13 @@ const Carousel = ({ images }) => {
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
       />
-      {/* Conditionner l'affichage de la flèche droite */}
+
       {!isSingleSlide && (
         <div className="right" onClick={nextSlide}>
           <img src={arrowRight} alt="Next" />
         </div>
       )}
-      {/* Conditionner l'affichage de la pagination */}
+
       {!isSingleSlide && (
         <div className="pagination">
           {currentIndex + 1}/{images.length}
