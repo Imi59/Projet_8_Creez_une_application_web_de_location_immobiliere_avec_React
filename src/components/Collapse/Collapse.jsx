@@ -4,7 +4,7 @@ import arrowDown from "../../assets/images/arrow-down.png";
 
 const Collapse = ({ title, defaultOpen, children }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-
+//fonction de basculement
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };

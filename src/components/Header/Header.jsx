@@ -1,8 +1,5 @@
-//pour importer une image on doit d'abord l,importer et ensuite l indiquer dans le src de notre balise img
 import LOGO from "../../assets/images/LOGO.jpg";
-//composant pour la navigation
 import { NavLink } from "react-router-dom";
-
 
 function Header() {
   return (
@@ -14,7 +11,7 @@ function Header() {
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "underline" : "")}
-            > 
+            >
               <li>Accueil</li>
             </NavLink>
             <NavLink
