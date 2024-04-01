@@ -17,6 +17,10 @@
         letter-spacing: 0em;
         text-align: left;
 
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+
 
     }
 
@@ -34,7 +38,7 @@
         font-family: 'Montserrat';
 
         @media screen and (max-width: 768px) {
-            font-size: 11px;
+            font-size: 12px;
             height: 30px;
         }
     }
